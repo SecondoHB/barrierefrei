@@ -1,88 +1,81 @@
 <!doctype html>
-<html lang="de" dir="ltr">
+<html lang="de">
   <head>
-    <!-- Technische Grundlagen -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO -->
-    <title>Musterseite</title>
-    <meta name="description" content="Musterseite" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Musterseite" />
-    <meta property="og:description" content="Musterseite" />
-    <!-- Absoluter Pfad für Social-Media-Vorschau -->
-    <meta property="og:image" content="https://..." />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Impressum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="impressumstyle.css" />
   </head>
   <body>
-    <!-- Header für Unterseiten -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <!-- Das Logo führt jetzt aktiv zurück zur Startseite -->
-        <a
-          href="index.html"
-          class="logo"
-          aria-label="Hausarztpraxis Muster Startseite"
-        >
-          Hausarztpraxis Muster Internetseite
-        </a>
-
-        <nav aria-label="Hauptnavigation">
-          <ul class="nav-list">
-            <!-- NEU: Der Home-Button / Startseite-Link -->
-            <li><a href="index.html">Startseite</a></li>
-            <!-- Die Anker-Links springen zurück auf die Startseite zum jeweiligen Bereich -->
-            <li><a href="index.html#oeffnungszeiten">Öffnungszeiten</a></li>
-            <li><a href="index.html#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+    <header>
+      <nav aria-label="Navigation">
+        <a href="../index.html">Zur Startseite</a>
+      </nav>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- Hier das neue div mit der Klasse öffnen -->
-      <div class="container-text">
-        <h1>Impressum</h1>
-        <p>
-          Informationen gemäß § 5 E-Commerce-Gesetz (ECG) und § 25 Mediengesetz.
-        </p>
+    <main id="main">
+      <h1>Impressum</h1>
 
-        <h2>Praxisinhaber & Diensteanbieter</h2>
-        <p>
-          <strong>[Dr. med. Vorname Nachname]</strong><br />
-          Berufsbezeichnung: Facharzt für Allgemeinmedizin <br />
-          Praxisadresse:
-        </p>
+      <p>Angaben gemäß §5 ECG (Österreich)</p>
 
-        <h2>Kontaktdaten</h2>
-        <p>
-          Telefon:<br />
-          E-Mail:<br />
-        </p>
+      <h2>Seitenbetreiber:</h2>
 
-        <h2>Zuständige Aufsichtsbehörde / Kammer</h2>
-        <p>
-          ....<br />
-          ....<br />
-          Website:
-          <a href="#" target="_blank" rel="noopener">www........at</a>
-        </p>
+      <address>
+        Bernd Honhaiser<br />
+        Autokaderstraße 3/32/4<br />
+        1210 Wien / Österreich<br />
+        E-Mail: <a href="mailto:secondohb@drei.at">secondohb@drei.at</a>
+      </address>
 
-        <h2>Berufsrechtliche Vorschriften</h2>
-        <p>Tätigkeit unterliegt dem ....</p>
+      <h2>Haftung für Links</h2>
 
-        <h2>Hinweis auf Online-Streitbeilegung</h2>
-        <p>Verbraucher haben die Möglichkeit, Beschwerden an die ....</p>
+      <p>
+        Diese Website enthält Links zu externen Websites Dritter, auf deren
+        Inhalte ich keinen Einfluss habe. Für diese fremden Inhalte übernehme
+        ich daher keine Gewähr.
+      </p>
 
-        <p>Das Bild der Ärztin ist von www.pexels.com</p>
-      </div>
+      <h2>Haftungsausschluss</h2>
+
+      <p>
+        Alle Angaben auf dieser Website dienen ausschließlich
+        <strong>zu Informationszwecken</strong>.
+      </p>
+      <p>
+        Der Seitenbetreiber haftet für Schäden, die durch die Nutzung oder
+        Nichtnutzung der auf dieser Website bereitgestellten Informationen
+        entstehen, nur bei vorsätzlichem oder grob fahrlässigem Verhalten.
+      </p>
+
+      <h2>Bildnachweis</h2>
+
+      Bildmaterial:
+      <a
+        href="https://www.pexels.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Pexels (öffnet in neuem Tab)"
+      >
+        Bilderquelle: Pexels
+      </a>
+
+      <p>
+        Die verwendeten Bilder sind
+        <strong>lokal auf einem Server gespeichert und eingebunden</strong>.
+      </p>
+
+      <p>
+        Beim Aufruf der Seiten findet
+        <strong>keine Übertragung personenbezogener Daten</strong> an Dritte
+        statt.
+      </p>
+
+      <p>Insbesondere werden von mir:</p>
+      <ul>
+        <li>keine Cookies gesetzt</li>
+        <li>keine Tracking- oder Analysefunktionen verwendet</li>
+      </ul>
     </main>
-
-    <!-- FERTIGER FOOTER FÜR ALLE DATEIEN -->
-    <footer></footer>
   </body>
 </html>
