@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+  <head>
+    <!-- Technische Grundlagen -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Musterseite</title>
+    <meta
+      name="description"
+      content="Musterseite"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Musterseite" />
+    <meta
+      property="og:description"
+      content="Musterseite"
+    />
+    <!-- Absoluter Pfad für Social-Media-Vorschau -->
+    <meta property="og:image" content="https://..." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <!-- Header für Unterseiten -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Das Logo führt jetzt aktiv zurück zur Startseite -->
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Hausarztpraxis Muster Startseite"
+        >
+          Hausarztpraxis Muster
+        </a>
+
+        <nav aria-label="Hauptnavigation">
+          <ul class="nav-list">
+            <!-- NEU: Der Home-Button / Startseite-Link -->
+            <li><a href="index.html">Startseite</a></li>
+            <!-- Die Anker-Links springen zurück auf die Startseite zum jeweiligen Bereich -->
+            <li><a href="index.html#oeffnungszeiten">Öffnungszeiten</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" tabindex="-1">
+      <div class="container-text">
+        <h1>Unsere medizinischen Leistungen</h1>
+        <p class="lead">
+          Erfahren Sie mehr über unsere medizinische Versorgung, Vorsorge und
+          präventive Maßnahmen.
+        </p>
+
+        <!-- Leistung 1 -->
+        <article
+          class="detailed-service"
+          aria-labelledby="allgemeinmedizin-title"
+        >
+          <h2 id="allgemeinmedizin-title">Allgemeinmedizin & Akutversorgung</h2>
+          <p>
+            Als Ihre erste Anlaufstelle in allen Gesundheitsfragen bieten wir
+            eine umfassende und langfristige Betreuung für die ganze Familie.
+          </p>
+          <!-- NEU: Direkte Hilfe per klickbarem Telefon-Link im Text -->
+          <p>
+            Bei akuten Beschwerden, Infekten oder Schmerzen erhalten Sie bei uns
+            rasche Hilfe. Bitte rufen Sie uns in dringenden Fällen direkt unter
+            <a href="tel:+43123456789232323" class="phone-link">+43 1 2343 563 789 333 32 323</a>
+            an.
+          </p>
+        </article>
+
+        <!-- Leistung 2 -->
+        <article class="detailed-service" aria-labelledby="vorsorge-title">
+          <h2 id="vorsorge-title">
+            Vorsorgeuntersuchungen (Gesundheits-Check-up)
+          </h2>
+          <p>
+            Die regelmäßige Vorsorgeuntersuchung ist für alle Personen ab dem
+            18. Lebensjahr einmal pro Jahr kostenlos (wird komplett von den
+            österreichischen Krankenkassen übernommen). Sie dient der
+            Früherkennung von Herz-Kreislauf-Erkrankungen, Diabetes und
+            Krebserkrankungen.
+          </p>
+
+          <!-- Barrierefreies Info-Akkordeon für Patienten -->
+          <details>
+            <summary>Was muss ich zur Vorsorgeuntersuchung mitbringen?</summary>
+            <div class="details-content">
+              <p>Für die Untersuchung sind zwei Termine notwendig:</p>
+              <ul>
+                <!-- NEU: Präzise Angabe der Laborzeiten für den Praxisalltag -->
+                <li>
+                  <strong>1. Termin (Blutabnahme):</strong> Bitte kommen Sie
+                  morgens nüchtern (mindestens 6 Stunden vorher nichts essen,
+                  nur Wasser trinken) zwischen
+                  <strong>08:00 und 10:00 Uhr</strong> zu uns in die Ordination.
+                </li>
+                <li>
+                  <strong>2. Termin (Befundbesprechung):</strong> Hier
+                  besprechen wir ausführlich alle Laborwerte und führen die
+                  körperliche Untersuchung durch. Bitte bringen Sie Ihren
+                  Impfpass mit.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </article>
+
+        <!-- Leistung 3 -->
+        <article class="detailed-service" aria-labelledby="impfung-title">
+          <h2 id="impfung-title">Impfberatung & Impfungen</h2>
+          <p>
+            Wir überprüfen Ihren aktuellen Impfstatus anhand des
+            österreichischen Impfplans und beraten Sie zu aufgefrischten oder
+            neuen Schutzimpfungen (wie z.B. Grippe, FSME, Tetanus). Alle
+            gängigen Impfstoffe werden von uns direkt in der Ordination
+            verabreicht.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <!-- FERTIGER FOOTER FÜR ALLE DATEIEN -->
+    <footer>
+    </footer>
+  </body>
+</html>

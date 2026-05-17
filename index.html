@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+  <head>
+    <!-- Technische Grundlagen -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Musterseite</title>
+    <meta
+      name="description"
+      content="Musterseite"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Musterseite" />
+    <meta
+      property="og:description"
+      content="Musterseite"
+    />
+    <!-- Absoluter Pfad für Social-Media-Vorschau -->
+    <meta property="og:image" content="https://..." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link"> Zum Inhalt springen </a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="logo"> Hausarztpraxis Muster </a>
+
+        <nav aria-label="Hauptnavigation">
+          <ul class="nav-list">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content" tabindex="-1">
+      <!-- Hero & Öffnungszeiten -->
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>
+              Moderne Allgemeinmedizin mit Fokus auf Zugänglichkeit und
+              Vertrauen
+            </h1>
+
+            <!-- Lokaler Bildpfad aus deinem assets-Ordner -->
+            <img
+              src="../assets/img/aerztin.jpg"
+              alt="Eine freundlich lächelnde Ärztin mit Stethoskop in einer hellen, modernen Arztpraxis."
+              class="hero-image"
+              width="1200"
+              height="800"
+            />
+
+            <p>
+              Barrierefreie Informationen, schnelle Erreichbarkeit und eine
+              klare mobile Nutzererfahrung für alle Patientinnen und Patienten.
+            </p>
+            <a href="#kontakt" class="button"> Termin anfragen </a>
+          </div>
+
+          <!-- Öffnungszeiten -->
+          <aside
+            class="hero-card"
+            id="oeffnungszeiten"
+            aria-labelledby="hours-title"
+          >
+            <h2 id="hours-title">Öffnungszeiten</h2>
+
+            <ul class="opening-hours">
+              <li>
+                <span>Montag</span>
+                <span>08:00 – 17:00</span>
+              </li>
+              <li>
+                <span>Dienstag</span>
+                <span>08:00 – 17:00</span>
+              </li>
+              <li>
+                <span>Mittwoch</span>
+                <span>08:00 – 13:00</span>
+              </li>
+              <li>
+                <span>Donnerstag</span>
+                <span>08:00 – 17:00</span>
+              </li>
+              <li>
+                <span>Freitag</span>
+                <span>08:00 – 12:00</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Leistungen (KORRIGIERT: tabindex="-1" ermöglicht flüssiges Weitertabben nach Ankersprung) -->
+      <section id="leistungen" aria-labelledby="services-title" tabindex="-1">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="services-title">Leistungen</h2>
+            <p>
+              Medizinische Betreuung für Vorsorge, Diagnostik und
+              allgemeinmedizinische Versorgung.
+            </p>
+          </div>
+
+          <!-- KORRIGIERT: Barrierefreie "Mehr erfahren"-Links mit sr-only Zusatz -->
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Allgemeinmedizin</h3>
+              <p>
+                Umfassende medizinische Betreuung für Erwachsene und Familien.
+              </p>
+              <a
+                href="leistungen.html#allgemeinmedizin-title"
+                class="service-link"
+              >
+                Mehr erfahren
+                <span class="sr-only"
+                  >über Allgemeinmedizin & Akutversorgung</span
+                >
+              </a>
+            </article>
+
+            <article class="service-card">
+              <h3>Vorsorgeuntersuchungen</h3>
+              <p>
+                Regelmäßige Gesundheitschecks und präventive Untersuchungen.
+              </p>
+              <a href="leistungen.html#vorsorge-title" class="service-link">
+                Mehr erfahren
+                <span class="sr-only">über Vorsorgeuntersuchungen</span>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <h3>Impfungen</h3>
+              <p>Beratung und Durchführung empfohlener Schutzimpfungen.</p>
+              <a href="leistungen.html#impfung-title" class="service-link">
+                Mehr erfahren
+                <span class="sr-only">über Impfberatung & Impfungen</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontakt (KORRIGIERT: tabindex="-1" fixiert den Tastatur-Fokus nach Ankersprung) -->
+      <section id="kontakt" aria-labelledby="contact-title" tabindex="-1">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="contact-title">Kontakt</h2>
+            <p>Wir helfen Ihnen gerne telefonisch oder per E-Mail weiter.</p>
+          </div>
+
+          <div class="contact-box">
+            <address>
+              <p><strong>Hausarztpraxis Muster</strong></p>
+              <p>Adresse: Musterstraße 10, 1010 Wien</p>
+              <br />
+              <p>
+                Telefon:
+                <a href="tel:+43123456789345345" class="contact-link">
+                  +43 1 234 56 789 345 345 
+                </a>
+              </p>
+              <p>
+                E-Mail:
+                <a href="mailto:ordination12344321@example.at" class="contact-link">
+                  ordination12344321@example.at
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <!-- FERTIGER FOOTER FÜR ALLE DATEIEN -->
+    <footer>
+      <div class="container footer-inner">
+        <nav aria-label="Rechtliche Links">
+          <ul class="footer-nav">
+            <!-- Präzise Verlinkung auf deine HTML-Dateien -->
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
