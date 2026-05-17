@@ -1,124 +1,170 @@
 <!doctype html>
-<html lang="de" dir="ltr">
+<html lang="de">
   <head>
-    <!-- Technische Grundlagen -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutzerklärung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-    <!-- SEO -->
-    <title>Musterseite</title>
-    <meta
-      name="description"
-      content="Musterseite"
-    />
-    <meta name="robots" content="index, follow" />
+      body {
+        margin: 0;
+        font-family: Verdana, Arial, sans-serif;
+        background: #1e1e2f;
+        color: #e0e0e0;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Musterseite" />
-    <meta
-      property="og:description"
-      content="Musterseite"
-    />
-    <!-- Absoluter Pfad für Social-Media-Vorschau -->
-    <meta property="og:image" content="https://..." />
-    <link rel="stylesheet" href="css/style.css" />
+      .skip-link {
+        position: absolute;
+        transform: translateY(-200%);
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+        left: 1rem;
+        top: 1rem;
+        background: black;
+        color: white;
+        padding: 0.5rem;
+        z-index: 1000;
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        line-height: 1.1;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #555;
+      }
+
+      main {
+        max-width: 800px;
+        margin: auto;
+        padding: 0.5rem 1.5rem;
+      }
+
+      .home {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+      }
+
+      :focus {
+        outline: 3px solid #facc6e;
+        outline-offset: 2px;
+      }
+      :focus:not(:focus-visible) {
+        outline: none;
+      }
+      a {
+        color: #ffd580;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:focus {
+        outline: 3px solid #facc6e;
+      }
+
+      .about-container {
+        flex-direction: column;
+        margin-bottom: 3rem;
+      }
+
+      .about-image img {
+        width: 80%;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .about-container {
+          flex-direction: column;
+          margin-bottom: 2rem;
+        }
+        .about-image img {
+          margin-top: 2rem;
+          width: 90%;
+          border-radius: 10px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      footer {
+        margin-top: 4rem;
+        font-size: 0.9rem;
+        opacity: 0.7;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header für Unterseiten -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <!-- Das Logo führt jetzt aktiv zurück zur Startseite -->
-        <a
-          href="index.html"
-          class="logo"
-          aria-label="Hausarztpraxis Muster Startseite"
-        >
-          Hausarztpraxis Muster
-        </a>
-
-        <nav aria-label="Hauptnavigation">
-          <ul class="nav-list">
-            <!-- NEU: Der Home-Button / Startseite-Link -->
-            <li><a href="index.html">Startseite</a></li>
-            <!-- Die Anker-Links springen zurück auf die Startseite zum jeweiligen Bereich -->
-            <li><a href="index.html#oeffnungszeiten">Öffnungszeiten</a></li>
-            <li><a href="index.html#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+    <header>
+      <nav aria-label="Navigation">
+        <a href="index.html">Zur Startseite</a>
+      </nav>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- Hier das neue div mit der Klasse öffnen -->
-      <div class="container-text">
-        <h1>Datenschutzerklärung</h1>
-        <p>
-          Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen.
-          Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der
-          gesetzlichen Bestimmungen (DSGVO, TKG 2021).
-        </p>
+    <main id="main">
+      <h1>Datenschutzerklärung</h1>
+      <p>
+        Diese Website selbst erhebt keine personenbezogenen Daten. Beim Zugriff
+        können jedoch durch den Hosting-Anbieter (GitHub Pages) technisch
+        notwendige Daten wie IP-Adressen in Server-Logfiles verarbeitet werden.
+      </p>
 
-        <h2>1. Verantwortlicher für die Datenverarbeitung</h2>
-        <p>
-          <strong>[Dr. med. Vorname Nachname]</strong><br />
-          Praxisadresse: <br />
-          Telefon: 
-          E-Mail:          
-        </p>
+      <p>Inhalte werden lokal gehostet und über GitHub Pages ausgeliefert.</p>
 
-        <h2>2. Kontaktaufnahme per E-Mail oder Telefon</h2>
-        <p>
-          Wenn Sie per E-Mail oder Telefon Kontakt mit uns aufnehmen, werden
-          Ihre angegebenen Daten (wie Name, E-Mail-Adresse, Telefonnummer und
-          Ihr Anliegen) zwecks Bearbeitung der Anfrage und für den Fall von
-          Anschlussfragen bei uns gespeichert.
-        </p>
-        <p>
-          Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die
-          Verarbeitung erfolgt zur Durchführung vorvertraglicher Maßnahmen bzw.
-          zur Erfüllung eines Behandlungsvertrages (Art. 6 Abs. 1 lit. b DSGVO).
-        </p>
+      <p>
+        Diese Website verwendet ausschließlich lokal gespeicherte Grafiken und
+        Inhalte. Es werden somit beim Laden der Bilder keine externen Dienste
+        oder Tracking-Tools eingebunden.
+      </p>
+      <p>
+        Hier finden Sie die
 
-        <h2>3. Bereitstellung der Website (Server-Logfiles)</h2>
-        <p>
-          Der Provider dieser Website erhebt und speichert automatisch
-          Informationen in sogenannten Server-Logfiles, die Ihr Browser
-          automatisch an uns übermittelt. Dies sind:
-        </p>
-        <ul>
-          <li>Browsertyp und Browserversion</li>
-          <li>Verwendetes Betriebssystem</li>
-          <li>Referrer URL (die zuvor besuchte Seite)</li>
-          <li>Hostname des zugreifenden Rechners (IP-Adresse)</li>
-          <li>Uhrzeit der Serveranfrage</li>
-        </ul>
-        <p>
-          Diese Daten sind nicht bestimmten Personen zuordenbar. Eine
-          Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
-          vorgenommen. Die Verarbeitung basiert auf unserem berechtigten
-          Interesse (Art. 6 Abs. 1 lit. f DSGVO) an der technischen Stabilität
-          und Sicherheit des Webservers.
-        </p>
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Datenschutzerklärung von GitHub (öffnet in neuem Tab)"
+        >
+          Allgemeine Datenschutzerklärung für GitHub
+        </a>
+      </p>
 
-        <h2>4. Ihre Rechte</h2>
-        <p>
-          Ihnen stehen bezüglich Ihrer bei uns gespeicherten Daten grundsätzlich
-          die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung,
-          Datenübertragbarkeit, Widerruf und Widerspruch zu.
-        </p>
-        <p>
-          Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das
-          Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche
-          sonst in einer Weise verletzt worden sind, können Sie sich bei uns
-          oder bei der zuständigen Aufsichtsbehörde beschweren.
-        </p>
-       
-      </div>
+      <h2>Verantwortlicher</h2>
+
+      <address>
+        Bernd Honhaiser<br />
+        Autokaderstraße 3/32/4<br />
+        1210 Wien / Österreich<br />
+        E-Mail: <a href="mailto:secondohb@drei.at">secondohb@drei.at</a>
+      </address>
     </main>
-
-    <!-- FERTIGER FOOTER FÜR ALLE DATEIEN -->
-    <footer>
-    </footer>
   </body>
 </html>
